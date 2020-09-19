@@ -13,7 +13,7 @@ let message;
   if (orderPieces === null) {
     message = CANCELED_BY_USER;
   } else if (totalPeice < credits) {
-    message = `Вы купили ${orderPieces} дроидов, на счету осталось ${balanceCredit} кредитов`;
+    message = 'Вы купили ${orderPieces} дроидов, на счету осталось ${balanceCredit} кредитов';
   } else {
     message = ACCESS_DENIED;
   }
